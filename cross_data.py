@@ -6,8 +6,8 @@ import os
 from dotenv import load_dotenv
 import time
 from datetime import datetime
-#from gradient_api import load_api_token, get_gameList, get_gameEvents_game, get_gameEvents_gameList, filter_gameEventType
-from functions import (load_api_token, get_gameList, get_gameEvents_game, get_gameEvents_gameList, filter_gameEventType)
+from GradientPy import load_api_token, get_gameList, get_gameEvents_game, get_gameEvents_gameList, filter_gameEventType
+#from functions import (load_api_token, get_gameList, get_gameEvents_game, get_gameEvents_gameList, filter_gameEventType)
 
 
 # Load authorisation header
