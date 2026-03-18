@@ -6,7 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "requests>=2.28.0",
-        "pandas>=1.5.0",
+        "pandas>=2.0.0",
         "numpy>=1.23.0",
         "python-dotenv>=0.20.0",
     ],
