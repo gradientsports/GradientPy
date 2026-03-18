@@ -9,7 +9,7 @@ GradientPy is a Python library developed by Gradient Sports (https://www.gradien
 Use the below code to install our repo onto your local environment
 
 ```
-pip install git+https://github.com/rorybrespff/gradient_api.git 
+pip install git+https://github.com/gradientsports/GradientPy.git 
 ```
 
 
@@ -26,6 +26,14 @@ API_TOKEN="{YOUR_API_TOKEN}"
 
 
 ### Step 3 - Access data 
+
+#### Import GradientPy functions
+
+Import functions from the GradientPy package:
+
+```
+from GradientPy import *
+```
 
 #### Load your API token
 To access your API token from your environment, you can use this function:
@@ -97,4 +105,4 @@ We have a provided a sample script cross_data.py that will return data for cross
 
 
 ## Questions and Support
-Our hope is that the above provides you with the information you need to begin exploring our Gradient REST API. However, if you have any questions or run into issues, please reach out to us at support@gradientsports.com
+We hope that the above provides you with the information you need to begin exploring our Gradient REST API. However, if you have any questions or run into issues, please reach out to us at support@gradientsports.com
