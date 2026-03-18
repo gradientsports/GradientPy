@@ -29,7 +29,7 @@ df = get_gameEvents_gameList(game_id_list, header=header)
 df = filter_gameEventType(df, gameEventType_list=gameEventTypes)
 
 # Set today's date
-date=datetime.today().strftime('%Y%m%d')
+#date=datetime.today().strftime('%Y%m%d')
 
 # Export dataframe to CSV
-df.to_csv(f'exports/gameEventDataframe_{date}.csv')
+#df.to_csv(f'exports/gameEventDataframe_{date}.csv')
