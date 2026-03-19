@@ -29,10 +29,10 @@ API_TOKEN="{YOUR_API_TOKEN}"
 
 #### Import GradientPy functions
 
-Import functions from the GradientPy package:
+Import functions from the gradientpy package:
 
 ```
-from GradientPy import *
+from gradientpy import *
 ```
 
 #### Load your API token
@@ -54,7 +54,7 @@ get_gameList(competition_name=None, season=None, header=None)
 This requires you to provide:
 * **competition_name**: A list of the competition names you want to include (i.e. ["Premier League", "La Liga"])
 * **season**: A list of the season(s) you want to include (i.e. ["2024-2025"])
-* **header**: Your API token that you will need to retrieve using the load_api_token() function
+* **header**: Use load_api_token() function to retrieve ( i.e. ```header = load_api_token()``` )
 
 The data is returned as a list.
 
@@ -67,7 +67,7 @@ get_gameEvents_game(game_id, header=None)
 
 This requires you to provide:
 * **game_id**: The game ID for the specfic game (i.e. 31995)
-* **header**: Your API token that you will need to retrieve using the load_api_token() function
+* **header**: Use load_api_token() function to retrieve ( i.e. ```header = load_api_token()``` )
 
 The data is returned as a pandas Dataframe.
 
@@ -80,7 +80,7 @@ get_gameEvents_gameList(game_list, header=None, delay=3, chunk_size=30, chunk_pa
 
 This requires you to provide:
 * **game_list**: A list of game IDs (i.e. [31995,31996,31997,31998,31999,32000]). You can generate a list of game IDs for a specfic competition(s) and season(s) using the get_GameList() funcition.
-* **header**: Your API token that you will need to retrieve using the load_api_token() function.
+* **header**: Use load_api_token() function to retrieve ( i.e. ```header = load_api_token()``` )
 * **delay**: Pause time (in seconds) between requests for game data. This stops immediately requesting new games that can create processing backlog. Default of 3 seconds is appropriate for most requests.
 * **chunk_size**: The number of games you want to process before pausing requests. This allows game backlog time to process in large volume request. Default of 30 games is appropriate for most requests.
 * **chunk_pause**: Pause time (in seconds) between game chunks being processed. This allows game backlog time to process in large volume request. Default of 300 seconds is appropriate for most requests.
