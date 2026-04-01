@@ -92,7 +92,7 @@ def get_gameEvents_game(game_id, header=None):
     ge_df = pd.DataFrame(gameEvents)
     
     # Add gameId (if not already includded in dataframe)
-    if ge_df.gameId is None:
+    if ge_df['gameId'].isnull().all():
         ge_df['gameId'] = game_id
     
     # Calculate time at end of request and print time it took handle this request
