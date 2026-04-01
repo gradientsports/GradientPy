@@ -7,8 +7,6 @@ from dotenv import load_dotenv
 import time
 from datetime import datetime
 from gradientpy import load_api_token, get_gameList, get_gameEvents_game, get_gameEvents_gameList, filter_gameEventType
-#from functions import (load_api_token, get_gameList, get_gameEvents_game, get_gameEvents_gameList, filter_gameEventType)
-
 
 # Load authorisation header
 header = load_api_token()
@@ -20,7 +18,6 @@ gameEventTypes = ['CR']
 
 # Retrive game list
 game_id_list = get_gameList(competition_name, season, header)
-game_id_list = game_id_list[0:5]
 
 # Create Game Events dataframe for games in game list
 df = get_gameEvents_gameList(game_id_list, header=header)

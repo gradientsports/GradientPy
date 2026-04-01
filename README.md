@@ -12,6 +12,12 @@ Use the below code to install our repo onto your local environment
 pip install git+https://github.com/gradientsports/GradientPy.git 
 ```
 
+If you have previously installed the GradientPy package and want to install the latest version, please use the code below
+
+```
+pip install --force-reinstall git+https://github.com/gradientsports/GradientPy.git
+```
+
 
 ### Step 2 - Set up your environment
 To access data via the Gradient API, you will require an API token. 
