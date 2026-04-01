@@ -48,6 +48,9 @@ coverage.xml
 *.cover
 *.py.cover
 .hypothesis/
+*.log
+*.tmp
+.vscode/
 .pytest_cache/
 cover/
 
