@@ -97,7 +97,8 @@ def get_gameEvents_game(game_id, header=None):
     
     return ge_df
 
-def get_gameEvents_gameList(game_list, header=None, delay=3, chunk_size=30, chunk_pause=300):
+def get_gameEvents_gameList(game_list, header=None, delay=1): 
+#chunk_size=30, chunk_pause=300):
     
     # Create initial empty list to append dataframes into as soon as they are requested and processed
     df_list = []
@@ -113,9 +114,9 @@ def get_gameEvents_gameList(game_list, header=None, delay=3, chunk_size=30, chun
         time.sleep(delay)
         
         # Add logic to pause processing (default 300 seconds) after 30 games to avoid queuing
-        if (i + 1) % chunk_size == 0:
-            print(f"Processed {i+1} games, pausing {chunk_pause}s...")
-            time.sleep(chunk_pause)
+        #if (i + 1) % chunk_size == 0:
+        #    print(f"Processed {i+1} games, pausing {chunk_pause}s...")
+        #    time.sleep(chunk_pause)
     
     # Once processing of all games is complete, concat them into one single dataframe
     df = pd.concat(df_list, ignore_index=True)
